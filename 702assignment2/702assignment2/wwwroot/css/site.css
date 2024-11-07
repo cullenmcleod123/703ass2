@@ -47,10 +47,15 @@ footer {
     color: black;
 }
 
-    .btn-secondary:focus {
-        background-color: #ac00ea;
-    }
+.btn-secondary:focus {
+    background-color: #ac00ea;
+}
+    
+    
+ul#backofdrop {
+    background-color: #ee00ff;
+}
 
-    ul#backofdrop {
-        background-color: #ee00ff;
-    }
+a hover {
+    background-color: #ac00ea
+}
