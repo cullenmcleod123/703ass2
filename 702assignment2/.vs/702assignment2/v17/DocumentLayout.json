@@ -7,24 +7,32 @@
       "RelativeMoniker": "D:0:0:{94DD2E76-B5F8-4E8B-93F8-AC1CC358EBE4}|702assignment2\\702assignment2.csproj|solutionrelative:702assignment2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94DD2E76-B5F8-4E8B-93F8-AC1CC358EBE4}|702assignment2\\702assignment2.csproj|c:\\users\\merrc\\onedrive\\desktop\\reactlearn2\\bank_modern_app\\703ass2\\702assignment2\\702assignment2\\views\\home\\bookings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{94DD2E76-B5F8-4E8B-93F8-AC1CC358EBE4}|702assignment2\\702assignment2.csproj|solutionrelative:702assignment2\\views\\home\\bookings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94DD2E76-B5F8-4E8B-93F8-AC1CC358EBE4}|702assignment2\\702assignment2.csproj|c:\\users\\merrc\\onedrive\\desktop\\reactlearn2\\bank_modern_app\\703ass2\\702assignment2\\702assignment2\\views\\home\\customer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{94DD2E76-B5F8-4E8B-93F8-AC1CC358EBE4}|702assignment2\\702assignment2.csproj|solutionrelative:702assignment2\\views\\home\\customer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94DD2E76-B5F8-4E8B-93F8-AC1CC358EBE4}|702assignment2\\702assignment2.csproj|c:\\users\\merrc\\onedrive\\desktop\\reactlearn2\\bank_modern_app\\703ass2\\702assignment2\\702assignment2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94DD2E76-B5F8-4E8B-93F8-AC1CC358EBE4}|702assignment2\\702assignment2.csproj|solutionrelative:702assignment2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{94DD2E76-B5F8-4E8B-93F8-AC1CC358EBE4}|702assignment2\\702assignment2.csproj|c:\\users\\merrc\\onedrive\\desktop\\reactlearn2\\bank_modern_app\\703ass2\\702assignment2\\702assignment2\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{94DD2E76-B5F8-4E8B-93F8-AC1CC358EBE4}|702assignment2\\702assignment2.csproj|solutionrelative:702assignment2\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{94DD2E76-B5F8-4E8B-93F8-AC1CC358EBE4}|702assignment2\\702assignment2.csproj|c:\\users\\merrc\\onedrive\\desktop\\reactlearn2\\bank_modern_app\\703ass2\\702assignment2\\702assignment2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{94DD2E76-B5F8-4E8B-93F8-AC1CC358EBE4}|702assignment2\\702assignment2.csproj|solutionrelative:702assignment2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94DD2E76-B5F8-4E8B-93F8-AC1CC358EBE4}|702assignment2\\702assignment2.csproj|c:\\users\\merrc\\onedrive\\desktop\\reactlearn2\\bank_modern_app\\703ass2\\702assignment2\\702assignment2\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{94DD2E76-B5F8-4E8B-93F8-AC1CC358EBE4}|702assignment2\\702assignment2.csproj|solutionrelative:702assignment2\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{94DD2E76-B5F8-4E8B-93F8-AC1CC358EBE4}|702assignment2\\702assignment2.csproj|c:\\users\\merrc\\onedrive\\desktop\\reactlearn2\\bank_modern_app\\703ass2\\702assignment2\\702assignment2\\702assignment2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{94DD2E76-B5F8-4E8B-93F8-AC1CC358EBE4}|702assignment2\\702assignment2.csproj|solutionrelative:702assignment2\\702assignment2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94DD2E76-B5F8-4E8B-93F8-AC1CC358EBE4}|702assignment2\\702assignment2.csproj|c:\\users\\merrc\\onedrive\\desktop\\reactlearn2\\bank_modern_app\\703ass2\\702assignment2\\702assignment2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94DD2E76-B5F8-4E8B-93F8-AC1CC358EBE4}|702assignment2\\702assignment2.csproj|solutionrelative:702assignment2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94DD2E76-B5F8-4E8B-93F8-AC1CC358EBE4}|702assignment2\\702assignment2.csproj|c:\\users\\merrc\\onedrive\\desktop\\reactlearn2\\bank_modern_app\\703ass2\\702assignment2\\702assignment2\\views\\home\\customer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{94DD2E76-B5F8-4E8B-93F8-AC1CC358EBE4}|702assignment2\\702assignment2.csproj|solutionrelative:702assignment2\\views\\home\\customer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94DD2E76-B5F8-4E8B-93F8-AC1CC358EBE4}|702assignment2\\702assignment2.csproj|c:\\users\\merrc\\onedrive\\desktop\\reactlearn2\\bank_modern_app\\703ass2\\702assignment2\\702assignment2\\views\\home\\bookings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{94DD2E76-B5F8-4E8B-93F8-AC1CC358EBE4}|702assignment2\\702assignment2.csproj|solutionrelative:702assignment2\\views\\home\\bookings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94DD2E76-B5F8-4E8B-93F8-AC1CC358EBE4}|702assignment2\\702assignment2.csproj|c:\\users\\merrc\\onedrive\\desktop\\reactlearn2\\bank_modern_app\\703ass2\\702assignment2\\702assignment2\\views\\home\\rooms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{94DD2E76-B5F8-4E8B-93F8-AC1CC358EBE4}|702assignment2\\702assignment2.csproj|solutionrelative:702assignment2\\views\\home\\rooms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{94DD2E76-B5F8-4E8B-93F8-AC1CC358EBE4}|702assignment2\\702assignment2.csproj|c:\\users\\merrc\\onedrive\\desktop\\reactlearn2\\bank_modern_app\\703ass2\\702assignment2\\702assignment2\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -41,10 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{94DD2E76-B5F8-4E8B-93F8-AC1CC358EBE4}|702assignment2\\702assignment2.csproj|c:\\users\\merrc\\onedrive\\desktop\\reactlearn2\\bank_modern_app\\703ass2\\702assignment2\\702assignment2\\areas\\identity\\data\\_702assignment2context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{94DD2E76-B5F8-4E8B-93F8-AC1CC358EBE4}|702assignment2\\702assignment2.csproj|solutionrelative:702assignment2\\areas\\identity\\data\\_702assignment2context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94DD2E76-B5F8-4E8B-93F8-AC1CC358EBE4}|702assignment2\\702assignment2.csproj|c:\\users\\merrc\\onedrive\\desktop\\reactlearn2\\bank_modern_app\\703ass2\\702assignment2\\702assignment2\\702assignment2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{94DD2E76-B5F8-4E8B-93F8-AC1CC358EBE4}|702assignment2\\702assignment2.csproj|solutionrelative:702assignment2\\702assignment2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,24 +58,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
+              "Title": "Rooms.cshtml",
+              "DocumentMoniker": "C:\\Users\\Merrc\\OneDrive\\Desktop\\reactlearn2\\bank_modern_app\\703ass2\\702assignment2\\702assignment2\\Views\\Home\\Rooms.cshtml",
+              "RelativeDocumentMoniker": "702assignment2\\Views\\Home\\Rooms.cshtml",
+              "ToolTip": "C:\\Users\\Merrc\\OneDrive\\Desktop\\reactlearn2\\bank_modern_app\\703ass2\\702assignment2\\702assignment2\\Views\\Home\\Rooms.cshtml",
+              "RelativeToolTip": "702assignment2\\Views\\Home\\Rooms.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T04:02:05.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Bookings.cshtml",
               "DocumentMoniker": "C:\\Users\\Merrc\\OneDrive\\Desktop\\reactlearn2\\bank_modern_app\\703ass2\\702assignment2\\702assignment2\\Views\\Home\\Bookings.cshtml",
               "RelativeDocumentMoniker": "702assignment2\\Views\\Home\\Bookings.cshtml",
               "ToolTip": "C:\\Users\\Merrc\\OneDrive\\Desktop\\reactlearn2\\bank_modern_app\\703ass2\\702assignment2\\702assignment2\\Views\\Home\\Bookings.cshtml",
               "RelativeToolTip": "702assignment2\\Views\\Home\\Bookings.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAMAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-07T01:58:53.29Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Customer.cshtml",
               "DocumentMoniker": "C:\\Users\\Merrc\\OneDrive\\Desktop\\reactlearn2\\bank_modern_app\\703ass2\\702assignment2\\702assignment2\\Views\\Home\\Customer.cshtml",
               "RelativeDocumentMoniker": "702assignment2\\Views\\Home\\Customer.cshtml",
@@ -84,20 +101,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Merrc\\OneDrive\\Desktop\\reactlearn2\\bank_modern_app\\703ass2\\702assignment2\\702assignment2\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "702assignment2\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\Merrc\\OneDrive\\Desktop\\reactlearn2\\bank_modern_app\\703ass2\\702assignment2\\702assignment2\\Controllers\\HomeController.cs",
               "RelativeToolTip": "702assignment2\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAowB4AAAAlAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAowCMAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-07T01:32:30.996Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Merrc\\OneDrive\\Desktop\\reactlearn2\\bank_modern_app\\703ass2\\702assignment2\\702assignment2\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "702assignment2\\Views\\Home\\Index.cshtml",
@@ -116,27 +133,27 @@
               "RelativeDocumentMoniker": "702assignment2\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\Merrc\\OneDrive\\Desktop\\reactlearn2\\bank_modern_app\\703ass2\\702assignment2\\702assignment2\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "702assignment2\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABcAAAAdAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAC0AAAByAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-07T01:23:26.922Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\Merrc\\OneDrive\\Desktop\\reactlearn2\\bank_modern_app\\703ass2\\702assignment2\\702assignment2\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "702assignment2\\wwwroot\\css\\site.css",
               "ToolTip": "C:\\Users\\Merrc\\OneDrive\\Desktop\\reactlearn2\\bank_modern_app\\703ass2\\702assignment2\\702assignment2\\wwwroot\\css\\site.css",
               "RelativeToolTip": "702assignment2\\wwwroot\\css\\site.css",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAACMAAAARAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAADIAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-11-07T01:21:32.376Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Merrc\\OneDrive\\Desktop\\reactlearn2\\bank_modern_app\\703ass2\\702assignment2\\702assignment2\\appsettings.json",
               "RelativeDocumentMoniker": "702assignment2\\appsettings.json",
@@ -144,12 +161,11 @@
               "RelativeToolTip": "702assignment2\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-07T01:15:46.3Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-07T01:15:46.3Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "_LoginPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\Merrc\\OneDrive\\Desktop\\reactlearn2\\bank_modern_app\\703ass2\\702assignment2\\702assignment2\\Views\\Shared\\_LoginPartial.cshtml",
               "RelativeDocumentMoniker": "702assignment2\\Views\\Shared\\_LoginPartial.cshtml",
@@ -157,12 +173,11 @@
               "RelativeToolTip": "702assignment2\\Views\\Shared\\_LoginPartial.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-07T01:12:50.427Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-07T01:12:50.427Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "_702assignment2Context.cs",
               "DocumentMoniker": "C:\\Users\\Merrc\\OneDrive\\Desktop\\reactlearn2\\bank_modern_app\\703ass2\\702assignment2\\702assignment2\\Areas\\Identity\\Data\\_702assignment2Context.cs",
               "RelativeDocumentMoniker": "702assignment2\\Areas\\Identity\\Data\\_702assignment2Context.cs",
@@ -174,7 +189,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 3,
               "Title": "702assignment2.csproj",
               "DocumentMoniker": "C:\\Users\\Merrc\\OneDrive\\Desktop\\reactlearn2\\bank_modern_app\\703ass2\\702assignment2\\702assignment2\\702assignment2.csproj",
               "RelativeDocumentMoniker": "702assignment2\\702assignment2.csproj",
@@ -182,11 +197,12 @@
               "RelativeToolTip": "702assignment2\\702assignment2.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-07T00:46:56.392Z"
+              "WhenOpened": "2024-11-07T00:46:56.392Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Merrc\\OneDrive\\Desktop\\reactlearn2\\bank_modern_app\\703ass2\\702assignment2\\702assignment2\\Program.cs",
               "RelativeDocumentMoniker": "702assignment2\\Program.cs",

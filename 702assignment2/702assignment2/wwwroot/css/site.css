@@ -25,13 +25,32 @@ body {
 
 nav {
     background-color: #ac00ea;
+    color: black;
 }
 
     nav ul {
         background-color: #cc00ff;
     }
 
+    nav a{
+        color:black;
+    }
+
 footer {
-    background-color: #ac00ea;
+    background-color: #cc00ff;
     color: black;
 }
+
+.btn-secondary {
+    background-color: #cc00ff;
+    border-color: #cc00ff;
+    color: black;
+}
+
+    .btn-secondary:focus {
+        background-color: #ac00ea;
+    }
+
+    ul#backofdrop {
+        background-color: #ee00ff;
+    }

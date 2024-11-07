@@ -33,7 +33,7 @@ namespace _702assignment2.Controllers
             return View();
         }
 
-        public IActionResult rooms()
+        public IActionResult Rooms()
         {
             return View();
         }
