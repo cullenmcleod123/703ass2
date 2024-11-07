@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Merrc\\source\\repos\\702assignment2\\702assignment2\\702assignment2.csproj": {}
+    "C:\\Users\\Merrc\\OneDrive\\Desktop\\reactlearn2\\bank_modern_app\\703ass2\\702assignment2\\702assignment2\\702assignment2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Merrc\\source\\repos\\702assignment2\\702assignment2\\702assignment2.csproj": {
+    "C:\\Users\\Merrc\\OneDrive\\Desktop\\reactlearn2\\bank_modern_app\\703ass2\\702assignment2\\702assignment2\\702assignment2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Merrc\\source\\repos\\702assignment2\\702assignment2\\702assignment2.csproj",
+        "projectUniqueName": "C:\\Users\\Merrc\\OneDrive\\Desktop\\reactlearn2\\bank_modern_app\\703ass2\\702assignment2\\702assignment2\\702assignment2.csproj",
         "projectName": "702assignment2",
-        "projectPath": "C:\\Users\\Merrc\\source\\repos\\702assignment2\\702assignment2\\702assignment2.csproj",
+        "projectPath": "C:\\Users\\Merrc\\OneDrive\\Desktop\\reactlearn2\\bank_modern_app\\703ass2\\702assignment2\\702assignment2\\702assignment2.csproj",
         "packagesPath": "C:\\Users\\Merrc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Merrc\\source\\repos\\702assignment2\\702assignment2\\obj\\",
+        "outputPath": "C:\\Users\\Merrc\\OneDrive\\Desktop\\reactlearn2\\bank_modern_app\\703ass2\\702assignment2\\702assignment2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
