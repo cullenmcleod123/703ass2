@@ -8,18 +8,18 @@ using IT703___Assignment2.Models;
 
 namespace IT703___Assignment2.Controllers
 {
-    public class Customertable : Controller
+    public class CustomertableController : Controller
     {
 
         // GET: Customertable
-        private readonly string connectionString = "YourConnectionStringHere";
+        private readonly string connectionString = "ServerConnection";
         public ActionResult Index()
         {
             using (var conn = new SqlConnection(connectionString))
             {
                 var customers = conn.Query<Customermodel>(
-            "GetCustomers",            // Stored procedure name
-            commandType: CommandType.StoredProcedure // Specify command type as StoredProcedure
+            "select * from CUSTOMER"            // Stored procedure name
+         
         ).ToList();
 
                 return View(customers);

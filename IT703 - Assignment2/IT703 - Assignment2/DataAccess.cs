@@ -7,7 +7,7 @@ namespace IT703___Assignment2
 {
     public class DataAccess
     {
-        private readonly string _connectionString;
+        public readonly string _connectionString;
 
         // Constructor to inject IConfiguration
         public DataAccess(IConfiguration configuration)
@@ -19,9 +19,9 @@ namespace IT703___Assignment2
         {
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
-                using (SqlCommand cmd = new SqlCommand("SP_AddCustomer", conn))
+                using (SqlCommand cmd = new SqlCommand("Select * From Customers", conn))
                 {
-                    cmd.CommandType = CommandType.StoredProcedure;
+                   
 
                     // Add parameters
                     cmd.Parameters.AddWithValue("@CustFirstName", firstName);
