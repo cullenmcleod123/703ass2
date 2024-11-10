@@ -15,7 +15,7 @@ namespace _702assignment2
             _connectionString = configuration.GetConnectionString("ServerConnection");
         }
 
-        public void AddCustomer(string firstName, string lastName, string email, string phoneNumber, string address, int? companyId, int travelAgencyId)
+        public void AddCustomer(string firstName, string lastName, string email, string phoneNumber, string address, int? companyId, int? travelAgencyId)
         {
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
