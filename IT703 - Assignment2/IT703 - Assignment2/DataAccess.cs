@@ -19,9 +19,9 @@ namespace IT703___Assignment2
         {
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
-                using (SqlCommand cmd = new SqlCommand("Select * From Customers", conn))
+                using (SqlCommand cmd = new SqlCommand("SP_Addcustomer", conn))
                 {
-                   
+                    commandType: CommandType.
 
                     // Add parameters
                     cmd.Parameters.AddWithValue("@CustFirstName", firstName);
