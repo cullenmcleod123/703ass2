@@ -1,0 +1,35 @@
+﻿@model IEnumerable<IT703___Assignment2.Models.BookingModel>
+
+@{
+    ViewData["Title"] = "Bookings List";
+}
+
+<h2>Booking List</h2>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Booking ID</th>
+            <th>Date Booked</th>
+            <th>Leaving Date</th>
+            <th>Room ID</th>
+            <th>Customer ID</th>
+            <th>Car Park ID</th>
+            <th>Booking Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var booking in Model)
+        {
+            <tr>
+                <td>@booking.BookingID</td>
+                <td>@booking.DateBooked.ToShortDateString()</td>
+                <td>@booking.LeavingDate.ToShortDateString()</td>
+                <td>@booking.RoomID</td>
+                <td>@booking.CustomerID</td>
+                <td>@booking.CarParkID</td>
+                <td>@booking.BookingStatus</td>
+            </tr>
+        }
+    </tbody>
+</table>

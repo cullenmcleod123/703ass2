@@ -1,0 +1,30 @@
+﻿@model IEnumerable<IT703___Assignment2.Models.RoomModel>
+
+@{
+    ViewData["Title"] = "Rooms List";
+}
+
+<h2>Room List</h2>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>ROOM ID</th>
+            <th>ROOM TYPE</th>
+            <th>Room Status</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var customer in Model)
+        {
+            <tr>
+                <td>@customer.RoomID</td>
+                <td>@customer.RoomType</td>
+                <td>@customer.RoomStatus</td>
+                
+            </tr>
+        }
+    </tbody>
+</table>
+

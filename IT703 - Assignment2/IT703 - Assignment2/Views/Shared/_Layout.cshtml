@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">IT703___Assignment2</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -22,12 +22,57 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Customertable" asp-action="Index">customer</a>
-                        </li>
+                        
+                        
+                        <div class="dropdown">
+                            <a class="btn btn-secondary text-dark dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                Tabels
+                            </a>
+
+                            <ul class="dropdown-menu" id="backofdrop" aria-labelledby="dropdownMenuLink">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Customertable" asp-action="Index">Customer</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Room" asp-action="Index">Rooms</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Booking" asp-action="Index">Bookings</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="CarPark" asp-action="Index">CarPark</a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="dropdown">
+                            <a class="btn btn-secondary text-dark dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                Forms
+                            </a>
+
+                            <ul class="dropdown-menu" id="backofdrop" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" asp-area="" asp-controller="" asp-action="">Check-ins for the day</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="" asp-action="">Checkouts for the day</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Booking" asp-action="Create">Booking</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="" asp-action="">Available car parks</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="" asp-action="">Change room status</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Customertable" asp-action="Create">Add Guests</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Customertable" asp-action="Create">Add Guests</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <a class="btn btn-secondary text-dark dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                Reports
+                            </a>
+
+                            <ul class="dropdown-menu" id="backofdrop" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" asp-area="" asp-controller="" asp-action="">End of day</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="" asp-action="">In house report</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="" asp-action="">Housekeeping report</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="" asp-action="">Check-in sheet</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="" asp-action="">Maintenance report</a></li>
+                            </ul>
+                        </div>
                     </ul>
                     <partial name="_LoginPartial" />
                 </div>
@@ -40,7 +85,7 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="border-top footer ">
         <div class="container">
             &copy; 2024 - IT703___Assignment2 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>

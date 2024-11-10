@@ -68,6 +68,86 @@ namespace IT703___Assignment2
 
             return customers;
         }
+
+        public List<RoomModel> GetAllRooms()
+        {
+            List<RoomModel> rooms = new List<RoomModel>();
+            using (SqlConnection conn = new SqlConnection(_connectionString))
+            {
+                string query = "SELECT RoomID, RoomType, RoomStatus FROM ROOM";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                conn.Open();
+
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    rooms.Add(new RoomModel
+                    {
+                        RoomID = (int)reader["RoomID"],
+                        RoomType = reader["RoomType"].ToString(),
+                        RoomStatus = reader["RoomStatus"].ToString()
+
+                    });
+
+                }
+
+            }
+
+            return rooms;
+        }
+        public List<BookingModel> GetAllBookings()
+        {
+            List<BookingModel> bookings = new List<BookingModel>();
+            using (SqlConnection conn = new SqlConnection(_connectionString))
+            {
+                string query = "SELECT BookingID, DateBooked, LeavingDate, RoomID, CustomerID, CarParkID, BookingStatus FROM BOOKINGS";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                conn.Open();
+
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    bookings.Add(new BookingModel
+                    {
+                        BookingID = (int)reader["BookingID"],
+                        DateBooked = (DateTime)reader["DateBooked"],
+                        LeavingDate = (DateTime)reader["LeavingDate"],
+                        RoomID = (int)reader["RoomID"],
+                        CustomerID = (int)reader["CustomerID"],
+                        CarParkID = (int)reader["CarParkID"],
+                        BookingStatus = reader["BookingStatus"].ToString()
+
+                    });
+
+                }
+
+            }
+
+            return bookings;
+        }
+        public List<CarParkModel> GetAllCarParks()
+        {
+            List<CarParkModel> carParks = new List<CarParkModel>();
+            using (SqlConnection conn = new SqlConnection(_connectionString))
+            {
+                string query = "SELECT CarParkID, CarParkStatus FROM CARPARK";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                conn.Open();
+
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    carParks.Add(new CarParkModel
+                    {
+                        CarParkID = (int)reader["CarParkID"],
+                        CarParkStatus = reader["CarParkStatus"].ToString()
+                    });
+                }
+            }
+
+            return carParks;
+        }
+
     }
 
 }

@@ -40,16 +40,35 @@ namespace IT703___Assignment2.Controllers
         // POST: Customertable/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(Customermodel customer)
         {
-            try
+            if (ModelState.IsValid) // Ensure model validation
             {
-                return RedirectToAction(nameof(Index));
+                try
+                {
+                    // Call AddCustomer method to insert data into the database
+                    _dataAccess.AddCustomer(
+                        customer.FirstName,
+                        customer.LastName,
+                        customer.Email,
+                        customer.PhoneNumber,
+                        customer.Address,
+                        customer.CompanyID,
+                        customer.TravelAgencyID
+                    );
+
+                    // After successful insertion, redirect to the Index action
+                    return RedirectToAction(nameof(Index));
+                }
+                catch (Exception ex)
+                {
+                    // Handle any exceptions (e.g., database errors)
+                    ModelState.AddModelError("", "An error occurred while adding the customer.");
+                }
             }
-            catch
-            {
-                return View();
-            }
+
+            // If validation failed, return the view with the model to show validation errors
+            return View(customer);
         }
 
         // GET: Customertable/Edit/5

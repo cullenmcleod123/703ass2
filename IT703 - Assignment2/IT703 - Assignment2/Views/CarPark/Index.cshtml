@@ -1,0 +1,26 @@
+﻿@model IEnumerable<IT703___Assignment2.Models.CarParkModel>
+
+@{
+    ViewData["Title"] = "Car Park List";
+}
+
+<h2>Car Park List</h2>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Car Park ID</th>
+            <th>Car Park Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var carPark in Model)
+        {
+            <tr>
+                <td>@carPark.CarParkID</td>
+                <td>@carPark.CarParkStatus</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
