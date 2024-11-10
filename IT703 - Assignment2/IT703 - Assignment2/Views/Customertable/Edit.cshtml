@@ -1,0 +1,57 @@
+﻿@model IT703___Assignment2.Models.Customermodel
+
+@{
+    ViewBag.Title = "Edit Customer";
+}
+
+<h2>Edit Customer</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.FirstName)
+        @Html.EditorFor(model => model.FirstName)
+        @Html.ValidationMessageFor(model => model.FirstName)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.LastName)
+        @Html.EditorFor(model => model.LastName)
+        @Html.ValidationMessageFor(model => model.LastName)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Email)
+        @Html.EditorFor(model => model.Email)
+        @Html.ValidationMessageFor(model => model.Email)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.PhoneNumber)
+        @Html.EditorFor(model => model.PhoneNumber)
+        @Html.ValidationMessageFor(model => model.PhoneNumber)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Address)
+        @Html.EditorFor(model => model.Address)
+        @Html.ValidationMessageFor(model => model.Address)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.CompanyID)
+        @Html.EditorFor(model => model.CompanyID)
+        @Html.ValidationMessageFor(model => model.CompanyID)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.TravelAgencyID)
+        @Html.EditorFor(model => model.TravelAgencyID)
+        @Html.ValidationMessageFor(model => model.TravelAgencyID)
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+}
+

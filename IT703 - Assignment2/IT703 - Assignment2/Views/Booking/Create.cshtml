@@ -1,0 +1,50 @@
+﻿@model IT703___Assignment2.Models.BookingModel
+
+@{
+    ViewBag.Title = "Create Booking";
+}
+
+<h2>Create a Booking</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.CustomerID)
+        @Html.DropDownListFor(model => model.CustomerID, (SelectList)ViewBag.Customers, "Select Customer", new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.CustomerID)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.RoomID)
+        @Html.DropDownListFor(model => model.RoomID, (SelectList)ViewBag.Rooms, "Select Room", new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.RoomID)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.CarParkID)
+        @Html.DropDownListFor(model => model.CarParkID, (SelectList)ViewBag.CarParks, "Select Car Park (Optional)", new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.CarParkID)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.DateBooked)
+        @Html.EditorFor(model => model.DateBooked, new { @class = "form-control", type = "date" })
+        @Html.ValidationMessageFor(model => model.DateBooked)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.LeavingDate)
+        @Html.EditorFor(model => model.LeavingDate, new { @class = "form-control", type = "date" })
+        @Html.ValidationMessageFor(model => model.LeavingDate)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.BookingStatus)
+        @Html.TextBoxFor(model => model.BookingStatus, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.BookingStatus)
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create Booking</button>
+}

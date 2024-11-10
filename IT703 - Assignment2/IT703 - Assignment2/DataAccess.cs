@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
+using Dapper;
 using IT703___Assignment2.Models;
 using Microsoft.Extensions.Configuration;
 
@@ -147,6 +148,81 @@ namespace IT703___Assignment2
 
             return carParks;
         }
+
+        public Customermodel GetCustomerById(int id)
+        {
+            using (SqlConnection conn = new SqlConnection(_connectionString))
+            {
+                var sqlQuery = "SELECT * FROM Customers WHERE CustomerID = @CustomerID";
+                return conn.QueryFirstOrDefault<Customermodel>(sqlQuery, new { CustomerID = id });
+            }
+        }
+        public void UpdateCustomer(int id, string firstName, string lastName, string email, string phoneNumber, string address, int? companyId, int? travelAgencyId)
+        {
+            using (SqlConnection conn = new SqlConnection(_connectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand("SP_UpdateCustomer", conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    // Add parameters
+                    cmd.Parameters.AddWithValue("@CustomerID", id);
+                    cmd.Parameters.AddWithValue("@FirstName", firstName);
+                    cmd.Parameters.AddWithValue("@LastName", lastName);
+                    cmd.Parameters.AddWithValue("@Email", email);
+                    cmd.Parameters.AddWithValue("@PhoneNumber", phoneNumber);
+                    cmd.Parameters.AddWithValue("@Address", address);
+                    cmd.Parameters.AddWithValue("@CompanyID", (object)companyId ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@TravelAgencyID", (object)travelAgencyId ?? DBNull.Value);
+
+                    // Open connection and execute the command
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
+        public List<RoomModel> GetAvailableRooms()
+        {
+            using (SqlConnection conn = new SqlConnection(_connectionString))
+            {
+                var sqlQuery = "SELECT RoomID FROM ROOM WHERE RoomStatus = 'VacantClean';";
+                return conn.Query<RoomModel>(sqlQuery).ToList();
+            }
+        }
+
+        public List<CarParkModel> GetAvailableCarParks()
+        {
+            using (SqlConnection conn = new SqlConnection(_connectionString))
+            {
+                var sqlQuery = "SELECT CarParkID FROM CARPARK WHERE CarParkStatus = 'Available';";
+                return conn.Query<CarParkModel>(sqlQuery).ToList();
+            }
+        }
+        public List<Customermodel> GetCustomers()
+        {
+            using (SqlConnection conn = new SqlConnection(_connectionString))
+            {
+                var sqlQuery = "SELECT CustomerID, CustomerName FROM Customers"; // Adjust table and column names as needed
+                return conn.Query<Customermodel>(sqlQuery).ToList();
+            }
+        }
+        public void AddBooking(int customerID, int roomID, int? carParkID, DateTime dateBooked, DateTime leavingDate, string bookingStatus)
+        {
+            using (SqlConnection conn = new SqlConnection(_connectionString))
+            {
+                var sqlQuery = "SP_Booking";  // Your stored procedure name
+                conn.Execute(sqlQuery, new
+                {
+                    @customerID = customerID,
+                    @roomID = roomID,
+                    @carParkID = carParkID,
+                    @dateBooked = dateBooked,
+                    @leavingDate = leavingDate,
+                    @bookingStatus = bookingStatus
+                }, commandType: CommandType.StoredProcedure);
+            }
+        }
+
 
     }
 

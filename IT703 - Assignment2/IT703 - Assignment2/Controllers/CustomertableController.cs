@@ -6,6 +6,7 @@ using Dapper;
 using System.Data;
 using IT703___Assignment2.Models;
 
+
 namespace IT703___Assignment2.Controllers
 {
     public class CustomertableController : Controller
@@ -74,22 +75,50 @@ namespace IT703___Assignment2.Controllers
         // GET: Customertable/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            // Get the customer details by ID
+            var customer = _dataAccess.GetCustomerById(id);
+
+            if (customer == null)
+            {
+                return View(); // Return a 404 if the customer is not found
+            }
+
+            return View(customer); // Pass the customer to the view
         }
 
         // POST: Customertable/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(int id, Customermodel customer)
         {
-            try
+            if (ModelState.IsValid)
             {
-                return RedirectToAction(nameof(Index));
+                try
+                {
+                    // Update the customer record in the database
+                    _dataAccess.UpdateCustomer(
+                        id,
+                        customer.FirstName,
+                        customer.LastName,
+                        customer.Email,
+                        customer.PhoneNumber,
+                        customer.Address,
+                        customer.CompanyID,
+                        customer.TravelAgencyID
+                    );
+
+                    // After successful update, redirect to the Index page
+                    return RedirectToAction(nameof(Index));
+                }
+                catch (Exception ex)
+                {
+                    // Handle any errors that may occur during the update
+                    ModelState.AddModelError("", "An error occurred while updating the customer.");
+                }
             }
-            catch
-            {
-                return View();
-            }
+
+            // If validation failed, return the view with the model to show validation errors
+            return View(customer);
         }
 
         // GET: Customertable/Delete/5

@@ -30,6 +30,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/2018010996/AppData/Local/OneDrive - Southern Institute of Technology/Documents/GitHub/703ass2/IT703 - Assignment2/IT703 - Assignment2/Views/Booking/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/2018010996/AppData/Local/OneDrive - Southern Institute of Technology/Documents/GitHub/703ass2/IT703 - Assignment2/IT703 - Assignment2/Views/Booking/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -40,6 +44,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/2018010996/AppData/Local/OneDrive - Southern Institute of Technology/Documents/GitHub/703ass2/IT703 - Assignment2/IT703 - Assignment2/Views/Customertable/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJ0YWJsZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/2018010996/AppData/Local/OneDrive - Southern Institute of Technology/Documents/GitHub/703ass2/IT703 - Assignment2/IT703 - Assignment2/Views/Customertable/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJ0YWJsZVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/2018010996/AppData/Local/OneDrive - Southern Institute of Technology/Documents/GitHub/703ass2/IT703 - Assignment2/IT703 - Assignment2/Views/Customertable/Index.cshtml]
