@@ -6,6 +6,8 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddTransient<DataAccess>();
+builder.Services.AddSingleton<DataAccess>();
+builder.Services.AddScoped<DataAccess>();
 
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("ServerConnection") ?? throw new InvalidOperationException("Connection string 'ServerConnection' not found.");
@@ -25,8 +27,10 @@ using (var scope = app.Services.CreateScope())
     var dataAccess = services.GetRequiredService<DataAccess>();
 
     // Add a customer (you can customize the values passed in)
-    dataAccess.AddCustomer("John", "Doe", "john.doe@example.com", "1234567890", "123 Elm Street", null, null);
+   // dataAccess.AddCustomer("John", "Doe", "john.doe@example.com", "1234567890", "123 Elm Street", null, null);
 }
+
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

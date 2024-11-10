@@ -10,20 +10,19 @@ namespace IT703___Assignment2.Controllers
 {
     public class CustomertableController : Controller
     {
+        private readonly DataAccess _dataAccess;
 
-        // GET: Customertable
-        private readonly string connectionString = "ServerConnection";
+
+        public CustomertableController(DataAccess dataAccess)
+        {
+            _dataAccess = dataAccess;
+
+        }
+
         public ActionResult Index()
         {
-            using (var conn = new SqlConnection(connectionString))
-            {
-                var customers = conn.Query<Customermodel>(
-            "select * from CUSTOMER"            // Stored procedure name
-         
-        ).ToList();
-
-                return View(customers);
-            }
+            var customers = _dataAccess.GetAllCustomers();
+            return View(customers);
         }
 
         // GET: Customertable/Details/5

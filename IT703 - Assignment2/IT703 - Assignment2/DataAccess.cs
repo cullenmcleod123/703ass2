@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
+using IT703___Assignment2.Models;
 using Microsoft.Extensions.Configuration;
 
 namespace IT703___Assignment2
@@ -19,9 +20,9 @@ namespace IT703___Assignment2
         {
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
-                using (SqlCommand cmd = new SqlCommand("SP_Addcustomer", conn))
+                using (SqlCommand cmd = new SqlCommand("SP_AddCustomer", conn))
                 {
-                    commandType: CommandType.
+                    cmd.CommandType = CommandType.StoredProcedure;
 
                     // Add parameters
                     cmd.Parameters.AddWithValue("@CustFirstName", firstName);
@@ -37,6 +38,35 @@ namespace IT703___Assignment2
                     cmd.ExecuteNonQuery();
                 }
             }
+        }
+
+        public List<Customermodel> GetAllCustomers()
+        {
+            List<Customermodel> customers = new List<Customermodel> ();
+            using(SqlConnection conn = new SqlConnection(_connectionString))
+            {
+                string query = "SELECT CustomerID, CustFirstName, CustLastName, CustEmail, CustPhoneNumber, CustAddress FROM CUSTOMER";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                conn.Open();
+
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    customers.Add(new Customermodel
+                    {
+                        CustmerID = (int)reader["CustomerID"],
+                        FirstName = reader["CustFirstName"].ToString(),
+                        LastName = reader["CustLastName"].ToString(),
+                        Email = reader["CustEmail"].ToString(),
+                        PhoneNumber = reader["CustPhoneNumber"].ToString(),
+                        Address = reader["CustAddress"].ToString()
+                    });
+
+                }
+
+            }
+
+            return customers;
         }
     }
 

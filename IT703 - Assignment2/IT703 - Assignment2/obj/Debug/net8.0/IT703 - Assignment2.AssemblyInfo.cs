@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IT703 - Assignment2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+15c14ef5eeafd48eeb20c76c2678f421515a1d62")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8414bfe449f33c4120dfd82b1d01ba77410341eb")]
 [assembly: System.Reflection.AssemblyProductAttribute("IT703 - Assignment2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IT703 - Assignment2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
