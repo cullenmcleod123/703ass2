@@ -1,0 +1,38 @@
+﻿@model IEnumerable<IT703___Assignment2.Models.EndOfDayModel>
+@{
+    ViewData["Title"] = "EndOfDay Report";
+}
+<h2>End of Day Report</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Booking ID</th>
+            <th>Customer Name</th>
+            <th>Date Booked</th>
+            <th>Leaving Date</th>
+            <th>Booking Status</th>
+            <th>Payment Amount</th>
+            <th>Payment Type</th>
+            <th>Payment Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var report in Model)
+        {
+            <tr>
+                <td>@report.BookingID</td>
+                <td>@report.CustomerName</td>
+                <td>@report.DateBooked.ToShortDateString()</td>
+                <td>@report.LeavingDate.ToShortDateString()</td>
+                <td>@report.BookingStatus</td>
+                <td>@report.PaymentAmount</td>
+                <td>@report.PaymentType</td>
+                <td>@report.PaymentDate?.ToShortDateString()</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h3>Summary</h3>
+<p>Total Amount: @summary.TotalAmount</p>
+<p>Total Transactions: @summary.TotalTransactions</p>

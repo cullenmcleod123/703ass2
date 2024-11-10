@@ -223,7 +223,83 @@ namespace IT703___Assignment2
             }
         }
 
+        public List<InHouseReportModel> GetInHouseReport()
+        {
+            var reportData = new List<InHouseReportModel>();
+
+            using (SqlConnection conn = new SqlConnection(_connectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand("sp_GetInHouseReport", conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    conn.Open();
+                    SqlDataReader reader = cmd.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        var report = new InHouseReportModel
+                        {
+                            BookingID = reader.GetInt32(reader.GetOrdinal("BookingID")),
+                            CustFirstName = reader.GetString(reader.GetOrdinal("CustFirstName")),
+                            CustLastName = reader.GetString(reader.GetOrdinal("CustLastName")),
+                            RoomType = reader.GetString(reader.GetOrdinal("RoomType")),
+                            CheckInDate = reader.GetDateTime(reader.GetOrdinal("CheckInDate")),
+                            CheckOutDate = reader.GetDateTime(reader.GetOrdinal("CheckOutDate")),
+                            BookingStatus = reader.GetString(reader.GetOrdinal("BookingStatus"))
+                        };
+                        reportData.Add(report);
+                    }
+                }
+            }
+
+            return reportData;
+        }
+        //out PaymentSummary summary
+        public List<EndOfDayModel> GetEndOfDayReport()
+        {
+            var reports = new List<EndOfDayModel>();
+            var summary = new PaymentSummary();
+
+            using (SqlConnection conn = new SqlConnection(_connectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand("SP_EndOfDayReport", conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    conn.Open();
+
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                       
+                        while (reader.Read())
+                        {
+                            reports.Add(new EndOfDayModel
+                            {
+                                BookingID = reader.GetInt32(0),
+                                CustomerName = reader.GetString(1),
+                                DateBooked = reader.GetDateTime(2),
+                                LeavingDate = reader.GetDateTime(3),
+                                BookingStatus = reader.GetString(4),
+                                PaymentAmount = reader.IsDBNull(5) ? (decimal?)null : reader.GetDecimal(5),
+                                PaymentType = reader.IsDBNull(6) ? null : reader.GetString(6),
+                                PaymentDate = reader.IsDBNull(7) ? (DateTime?)null : reader.GetDateTime(7)
+                            });
+                        }
+
+                        
+                        if (reader.NextResult() && reader.Read())
+                        {
+                            summary.TotalAmount = reader.GetDecimal(0);
+                            summary.TotalTransactions = reader.GetInt32(1);
+                        }
+                    }
+                }
+            }
+
+            return reports;
+        }
 
     }
+
 
 }

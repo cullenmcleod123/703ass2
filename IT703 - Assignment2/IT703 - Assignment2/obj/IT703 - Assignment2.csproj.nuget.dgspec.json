@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\2018010996\\AppData\\Local\\OneDrive - Southern Institute of Technology\\Documents\\GitHub\\703ass2\\IT703 - Assignment2\\IT703 - Assignment2\\IT703 - Assignment2.csproj": {}
+    "C:\\Users\\2018011019\\AppData\\Local\\OneDrive - Southern Institute of Technology\\Documents\\Ruben\\IT703 - Assignment2\\IT703 - Assignment2\\IT703 - Assignment2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\2018010996\\AppData\\Local\\OneDrive - Southern Institute of Technology\\Documents\\GitHub\\703ass2\\IT703 - Assignment2\\IT703 - Assignment2\\IT703 - Assignment2.csproj": {
+    "C:\\Users\\2018011019\\AppData\\Local\\OneDrive - Southern Institute of Technology\\Documents\\Ruben\\IT703 - Assignment2\\IT703 - Assignment2\\IT703 - Assignment2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\2018010996\\AppData\\Local\\OneDrive - Southern Institute of Technology\\Documents\\GitHub\\703ass2\\IT703 - Assignment2\\IT703 - Assignment2\\IT703 - Assignment2.csproj",
+        "projectUniqueName": "C:\\Users\\2018011019\\AppData\\Local\\OneDrive - Southern Institute of Technology\\Documents\\Ruben\\IT703 - Assignment2\\IT703 - Assignment2\\IT703 - Assignment2.csproj",
         "projectName": "IT703 - Assignment2",
-        "projectPath": "C:\\Users\\2018010996\\AppData\\Local\\OneDrive - Southern Institute of Technology\\Documents\\GitHub\\703ass2\\IT703 - Assignment2\\IT703 - Assignment2\\IT703 - Assignment2.csproj",
-        "packagesPath": "C:\\Users\\2018010996\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\2018010996\\AppData\\Local\\OneDrive - Southern Institute of Technology\\Documents\\GitHub\\703ass2\\IT703 - Assignment2\\IT703 - Assignment2\\obj\\",
+        "projectPath": "C:\\Users\\2018011019\\AppData\\Local\\OneDrive - Southern Institute of Technology\\Documents\\Ruben\\IT703 - Assignment2\\IT703 - Assignment2\\IT703 - Assignment2.csproj",
+        "packagesPath": "C:\\Users\\2018011019\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\2018011019\\AppData\\Local\\OneDrive - Southern Institute of Technology\\Documents\\Ruben\\IT703 - Assignment2\\IT703 - Assignment2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\2018010996\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\2018011019\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

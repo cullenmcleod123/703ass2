@@ -59,12 +59,12 @@ namespace IT703___Assignment2.Controllers
             }
 
             // If model state is not valid, fetch rooms and car parks again
-            var rooms = _dataAccess.GetAvailableRooms();
+            /*var rooms = _dataAccess.GetAvailableRooms();
             var carParks = _dataAccess.GetAvailableCarParks();
             var customers = _dataAccess.GetCustomers();
             ViewBag.CustomerID = new SelectList(customers, "CustomerID");
             ViewBag.Rooms = new SelectList(rooms, "RoomID");
-            ViewBag.CarParks = new SelectList(carParks, "CarParkID");
+            ViewBag.CarParks = new SelectList(carParks, "CarParkID");*/
 
             return View(booking);  // Re-display the form with validation errors
         }
